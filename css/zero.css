@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+header{
+    background: linear-gradient(gray, red 15%, red 85%, grey);
+
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    width: 200px;
+    
+
+}
+main{
+    display: flex;
+    background-color: blue;
+    
+    
+}
+
+aside{
+    background-color: blue;
+}
+.container{
+    display: flex;
+    
+}

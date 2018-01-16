@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+      
+      <!--
+      Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+      
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+      #container{
+         width: 550px;
+         margin: auto;
+      
+         text-align: center;
+      
+      }
+      
+      legend{
+         font-size: 30px;
+         background-color: #fff;
+         border-radius: 5px;
+         border: 1px solid #999;
+         padding: 4px 15px;
+      }
+      
+      label .field{
+         display: block;
+         text-align: right;
+         width: 100px;
+         float: left;
+      
+      }
+      input{
+         width: 200px;
+         border-radius: 5px;
+         padding: 6px 8px;
+      }
+      input:focus{
+         background-color: yellow;
+
+      }
+      .field{
+         padding: 6px 8px;
+      }
+      
+      #currency{
+         width: 220px;
+         border-radius: 5px;
+         padding: 6px 8px;
+      }
+      
+      fieldset{
+         width: 450px;
+         border: 1px solid #999;
+         border-radius: 20px;
+         clear: both;
+         padding: 20px;
+         margin-bottom: 100px;
+         background-color:rgba(129, 187, 201,.2);
+         
+      }
+      .radioSpace{
+         
+         margin: 0px;
+         padding: 0px;
+         width: 13px;
+         background-color:black;
+         
+      }
+      
+      .fshort{
+         width: 35px;
+      }
+      .fmid{
+         width: 150px;
+      }
+      
+      
+      
+      </style>
+   </head>
+<body>
+   <div id="container">
+      <form id="signUp">
+         <fieldset>
+            <legend>Registration</legend>
+               <label for="fname" class="field">First Name:</label>
+               <input type="text" id="fname" name="fname" placeholder="eg. John" autocomplete="on"/>
+               <br/>
+               <label for="password" class="field">Password:</label>
+               <input type="password" id="password" name="password" placeholder=" eg. ********" autocomplete="on" required/>
+               <br/> 
+               <label for="email" class="field">E-Main:</label>
+               <input type="email" id="email" name="email" placeholder="eg. validemail@provider.com" required autofocus autocomplete="on"/>
+               <br/>
+               <label for="url" class="field">Website:</label>
+               <input type="url" id="url" name="url" placeholder="www.YourSite.com" autocomplete="on" disabled/>
+               <br/>
+               <label for="contnum" class="field">Contact:</label>
+               <input type="tel"  id="contnum" name="contnum" pattern="08[3-9]{1}[0-9]{7}" placeholder="0851234567"  required autocomplete="on" />
+               <br/>
+               <label for="passport" class= "field">Passport:</label>
+               <input type="text" id="passport" name="passport" pattern="[0-9]{7}[A-Z]{1}" required/>
+               <br>
+               <label for="eirCode" class= "field">EirCode:</label>
+               <input type="text" id="eirCode" name="eirCode" pattern="[A-Z]{1}[0-9]{2} [A-Z]{1}[0-9]{1}[A-Z]{1}[0-9]{1}" required/>
+               <br>
+               <label for="cCard1" class= "field">Credit Card:</label>
+               <input type="text" class="fshort" id="cCard1" name="cCard1" pattern="[0-9]{4}" required/>
+               <input type="text" class="fshort" id="cCard2" name="cCard2" pattern="[0-9]{4}" required/>
+               <input type="text" class="fshort" id="cCard3" name="cCard3" pattern="[0-9]{4}" required/>
+               <input type="text" class="fshort" id="cCard4" name="cCard4" pattern="[0-9]{4}" required/>
+               <br>
+               <label for="ccexp" class="field">Expires:</label>
+               <input type="text" class="fshort" id="ccexp" name="ccexp" pattern="[0-9]{2}[0-9]{2}"/>
+               <label for="cccv" class="field">Expires:</label>
+               <input type="password" class="fshort" id="cccv" name="cccv" pattern="[0-9]{3}"/>
+               <br/>
+               <label for="fmid">Date of Birth:</label>
+               <input class="fmid" id="fmid" type="date" name="fmid"/>
+               
+              <br/>
+              What the hell are you??
+              <br/>
+              <input class="radioSpace" type="radio" name="gender" value="male">Male<br>
+              <input class="radioSpace" type="radio" name="gender" value="male">Female<br>
+              <input class="radioSpace" type="radio" name="gender" value="male">Fionn Murray
+              <br/>
+         
+               <label for="object1">Starter:</label>
+               <input type="checkbox" id="object1">
+               <br/>
+               <label for="object2">Main:</label>
+               <input type="checkbox" id="object2">
+               <br/>
+               <label for="object3">Desert:</label>
+               <input type="checkbox" id="object3">
+              
+              
+              <br/>
+              
+              <br/>
+              <input list="music_genre" name="music_genre"/>
+              <datalist id="music_genre">
+                 <option option-value="rock">Rock</option>
+                 <option option-value="punk">Punk</option>
+                 <option option-value="metal">Metal</option>
+                 <option option-value="shitMusic">Shit Music</option>
+              </datalist>
+              <br/>
+              <input list="fav_person" name="fav_person"/>
+              <datalist id="fav_person">
+                 <option option-value="stephen">Stephen</option>
+                 <option option-value="stephen">Moody</option>
+                 <option option-value="stephen">Stephen Moody</option>
+                 <option option-value="stephen">I LOVE STEPHEN</option>
+              </datalist>
+              <br/>
+              
+              <select>
+                 <option value="Apple">Apple</option>
+                 <option value="Banana">Banana</option>
+                 <option value="Coconut">Coconut</option>
+              </select>
+              <br/>
+               <label for="terms">I agree to all terms and conditions that may apply, including giving up my first born in the glorius name of our lord and saviours - Stephen</label>
+               
+               <br/><input type="checkbox" id="terms">
+              
+              <br/>
+              
+              <input type="submit" value="Submit"/>
+              
+            
+         </fieldset>
+      </form>
+   
+   </div>
+</body>
+
+</html>
